@@ -7,46 +7,73 @@ This repository contains my personalized MATLAB Simulink model of a solar-powere
 - Custom enhancements to the tutorial model, including improved load profiles and explanation of system process.
 
 ## How it works
-1.Solar PV is dependent on irradiance(sunlight) and Temperature. 
+<details> <summary>**1. Solar Panels (PV Array)**</summary>
+Solar panels require irradiance (sunlight) to function. They use sunlight as an energy source, allowing photons to transfer energy to electrons, generating current via the photovoltaic effect.
 
-2.PV array is providing the Direct Current( this our source). 
+Temperature effect: Temperature influences the band gap energy of semiconductor materials, which determines how much energy is needed to release electrons.
 
-3.We have a capacitor attached in parallel. Since our 24 hour days are not all sunlight, we won’t have a constant supply. since the capacitor does not allow for the sudden changes, and protects the other circuit compents
-4. The boost converter(inductor, switch, diode, and capacitor) will boost the DC voltage.
-4b. Additionally, we have added a pulse generator to the IGBT/Diode swich (50% duty cycle)
-5. Next, is the inverter which will allow for the DC to be converted to AC.
-5b. Also, there is PWM generator to allow for the inverter to have the rapidly switching mechanism.
-6. The AC voltage is then passed through a passive filter.
-7. Lastly, we have the resistive AC load that repersents our home.
+</details> <details> <summary>**2. Direct Current (DC) Generation**</summary>
+When electrons are released in the semiconductor material, they flow in a single direction, producing direct current (DC).
+
+</details> <details> <summary>**3. Capacitor (Ripple Reduction)**</summary>
+The capacitor smooths voltage fluctuations and protects other components in the circuit.
+
+It reduces the ripple factor caused by the varying supply from the solar panel.
+
+</details> <details> <summary>**4. Boost Converter**</summary>
+Switch Closed (IGBT/Diode ON): Current passes through the inductor, storing energy in its magnetic field.
+
+Switch Open: The current decreases through the inductor, and to oppose the change, the voltage across the inductor rises rapidly.
+
+This voltage combines with the input voltage to forward-bias the diode, charging the capacitor.
+
+The capacitor then provides a stepped-up DC voltage to the load.
+
+The pulse generator runs at a 50% duty cycle, controlling the IGBT switching for voltage boosting.
+
+</details> <details> <summary>**5. Inverter**</summary>
+The inverter converts DC to AC using a configuration of diodes or IGBT switches.
+
+Current alternates between two paths to produce an AC square wave.
+
+Pulse Width Modulation (PWM) smooths the waveform into a sine wave.
+
+</details> <details> <summary>**6. Passive Filter (LC)**</summary>
+An inductor-capacitor (LC) filter removes unwanted high-frequency components, producing a pure AC sine wave from the PWM output.
+
+</details> <details> <summary>**7. Load (Resistor)**</summary>
+A resistor represents the AC load that consumes the delivered power.
+
+</details>
 
 ## Why it works
-<details> <summary>**1. Solar Panels (PV Array)**</summary>
+<details> <summary>1. Solar Panels (PV Array)</summary>
 Converts sunlight into DC electricity via the photovoltaic effect.
 
 Temperature affects the semiconductor band gap, which changes the energy needed to release electrons.
 
-</details> <details> <summary>**2. DC Output**</summary>
+</details> <details> <summary>2. DC Output</summary>
 Electrons flow in a single direction, producing direct current (DC).
 
-</details> <details> <summary>**3. Capacitor (Ripple Reduction)**</summary>
+</details> <details> <summary>3. Capacitor (Ripple Reduction)</summary>
 Smooths voltage fluctuations from the solar panel output and protects other circuit components.
 
-</details> <details> <summary>**4. Boost Converter**</summary>
+</details> <details> <summary>4. Boost Converter</summary>
 Switch Closed (IGBT/Diode ON) → Current flows through the inductor, storing energy in its magnetic field.
 
 Switch Open → Inductor releases stored energy (acting like a “second battery”), boosting voltage before charging the capacitor.
 
 Controlled by a 50% duty cycle pulse generator to regulate switching.
 
-</details> <details> <summary>**5. Inverter**</summary>
+</details> <details> <summary>5. Inverter</summary>
 Converts DC to AC using diodes or IGBT switches.
 
 Pulse Width Modulation (PWM) shapes the waveform into a smoother sine wave.
 
-</details> <details> <summary>**6. Passive Filter (LC)**</summary>
+</details> <details> <summary>6. Passive Filter (LC)</summary>
 Removes high-frequency components from the waveform, producing a clean AC sine wave.
 
-</details> <details> <summary>**7. Load (Resistor)**</summary>
+</details> <details> <summary>7. Load (Resistor)</summary>
 Represents the AC power consumption of the home.
 
 </details>
