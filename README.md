@@ -7,20 +7,20 @@ This repository contains my personalized MATLAB Simulink model of a solar-powere
 - Custom enhancements to the tutorial model, including improved load profiles and explanation of system process.
 
 ## How it works
-<details> <summary>**1. Solar Panels (PV Array)**</summary>
+<details> <summary>1. Solar Panels (PV Array)</summary>
 Solar panels require irradiance (sunlight) to function. They use sunlight as an energy source, allowing photons to transfer energy to electrons, generating current via the photovoltaic effect.
 
 Temperature effect: Temperature influences the band gap energy of semiconductor materials, which determines how much energy is needed to release electrons.
 
-</details> <details> <summary>**2. Direct Current (DC) Generation**</summary>
+</details> <details> <summary>2. Direct Current (DC) Generation</summary>
 When electrons are released in the semiconductor material, they flow in a single direction, producing direct current (DC).
 
-</details> <details> <summary>**3. Capacitor (Ripple Reduction)**</summary>
+</details> <details> <summary>3. Capacitor (Ripple Reduction)</summary>
 The capacitor smooths voltage fluctuations and protects other components in the circuit.
 
 It reduces the ripple factor caused by the varying supply from the solar panel.
 
-</details> <details> <summary>**4. Boost Converter**</summary>
+</details> <details> <summary>4. Boost Converter</summary>
 Switch Closed (IGBT/Diode ON): Current passes through the inductor, storing energy in its magnetic field.
 
 Switch Open: The current decreases through the inductor, and to oppose the change, the voltage across the inductor rises rapidly.
@@ -31,17 +31,17 @@ The capacitor then provides a stepped-up DC voltage to the load.
 
 The pulse generator runs at a 50% duty cycle, controlling the IGBT switching for voltage boosting.
 
-</details> <details> <summary>**5. Inverter**</summary>
+</details> <details> <summary>5. Inverter</summary>
 The inverter converts DC to AC using a configuration of diodes or IGBT switches.
 
 Current alternates between two paths to produce an AC square wave.
 
 Pulse Width Modulation (PWM) smooths the waveform into a sine wave.
 
-</details> <details> <summary>**6. Passive Filter (LC)**</summary>
+</details> <details> <summary>6. Passive Filter (LC)</summary>
 An inductor-capacitor (LC) filter removes unwanted high-frequency components, producing a pure AC sine wave from the PWM output.
 
-</details> <details> <summary>**7. Load (Resistor)**</summary>
+</details> <details> <summary>7. Load (Resistor)</summary>
 A resistor represents the AC load that consumes the delivered power.
 
 </details>
