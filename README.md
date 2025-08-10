@@ -12,17 +12,32 @@ This repository contains my personalized MATLAB Simulink model of a solar-powere
 3.We have a capacitor attached in parallel. Since our 24 hour days are not all sunlight, we won’t have a constant supply. since the capacitor does not allow for the sudden changes, and protects the other circuit compents
 4. The boost converter(inductor, switch, diode, and capacitor) will boost the DC voltage.
 4b. Additionally, we have added a pulse generator to the IGBT/Diode swich (50% duty cycle)
-5. Next, is the inverter which will allow for the DC to be converted to AC
-6. Lastly, we have the resistive AC load that repersents our home
+5. Next, is the inverter which will allow for the DC to be converted to AC.
+5b. Also, there is PWM generator to allow for the inverter to have the rapidly switching mechanism.
+6. The AC voltage is then passed through a passive filter.
+7. Lastly, we have the resistive AC load that repersents our home.
 
 ## Why it works
-1. Solar panels require irradiance(sunlight) to function becuase they use the sunlight as an energy source to allow for the photons to transfer energy to the electrons to create a current via the photovoltaic effect. Temperature influences the "band gap" energy of semiconductor materials, which governs how much energy is required to release electrons.
-2. When electrons are released in the semiconductor material, they flow in one direction classifying it as direct current (DC)
-3. Since the capacitor does not allow for the sudden changes, and protects the other circuit components. The capacitor will reduce the ripple factor, as the supply from the solar panel is varying.
-4. When the IGBT/Diode is closed, the current in the passing through the inductor is large. This stores the energy in magnetic field. However, when the switch is opened, the current decreases through the inductor. To oppose the change, the voltage across the inductor rises rapidly. This voltage(across inductor) combines with the input voltage to allow for the current to pass through the diode as it becomes foward-biased and thus charging the capacitor. The capacitor then charges the load with a higher voltage then the input voltage. **What is interesting is that when the switch is opened, the inductor's energy release acts as a "second battery". This allows for the capacitor to provide a stepped up DC voltage to the load.**
+Key Stages & Components
+Solar Panels (PV Array) – Converts sunlight into DC electricity via the photovoltaic effect. Temperature affects the semiconductor band gap, influencing electron release and overall efficiency.
 
+DC Output – Electrons flow in a single direction, producing direct current (DC).
 
-4.Now, we have our boost converter. This is comprised of an inductor, switch(IGBT/Diode) and a capacitor. 
+Capacitor (Ripple Reduction) – Smooths voltage fluctuations from the solar output and protects circuit components.
+
+Boost Converter –
+
+Switch Closed (IGBT/Diode ON): Current flows through the inductor, storing energy in its magnetic field.
+
+Switch Open: Inductor releases stored energy (acting like a “second battery”), boosting voltage before charging the capacitor.
+
+Controlled by a 50% duty cycle pulse generator for regulated switching.
+
+Inverter – Converts DC to AC using diodes or IGBT switches. Pulse Width Modulation (PWM) shapes the output into a smoother sine wave.
+
+Passive Filter (LC) – Removes high-frequency components from the waveform, producing a clean AC sine wave.
+
+Load (Resistor) – Represents the home’s AC power consumption.
 ## Acknowledgement
 Based on the tutorial video by [Solar-Powered Home in Simulink](https://www.youtube.com/watch?v=RQcMuLC8_DE). Big thanks for the clear walkthrough. I used it as a foundation, then added custom improvements.
 
