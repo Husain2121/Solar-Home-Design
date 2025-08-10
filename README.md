@@ -1,4 +1,4 @@
-#  Solar-Powered Smart Home Simulation in MATLAB Simulink
+#  Solar-Powered Home Simulation in MATLAB Simulink
 
 This repository contains my personalized MATLAB Simulink model of a solar-powered residential system, developed after following the tutorial “Solar-Powered Home in Simulink” on YouTube.
 
