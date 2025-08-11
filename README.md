@@ -92,6 +92,7 @@ A resistor represents the AC load that consumes the delivered power.
 2. **After Boost Converter:** `240V DC`  
 
 3. **After Inverter & Passive Filter:** `240V AC`
+   ![Inverter Output](images/inverter_output.png)
 
 ## Acknowledgement
 Based on the tutorial video by [Solar-Powered Home in Simulink](https://www.youtube.com/watch?v=RQcMuLC8_DE). Big thanks for the clear walkthrough. I used it as a foundation, then added custom improvements.
