@@ -80,7 +80,8 @@ A resistor represents the AC load that consumes the delivered power.
 
 ## Tools and Components
 **Design Software:** MATLAB Simulink
-**Component Valuesa and Amount:** Inductor - 0.02H (x2), Capicitor - 0.006F (x3), Resistor - 1 Ω (x1), Diode - 0.8Vf (x1), IGBT/Diode (x1), Inverter (x1), PWM Generator 2-Level (x1), Pulse Generator (x1), Voltage Reader (x3), and Scope (x3)
+
+**Component Values and Amount:** Inductor - 0.02H (x2), Capicitor - 0.006F (x3), Resistor - 1 Ω (x1), Diode - 0.8Vf (x1), IGBT/Diode (x1), Inverter (x1), PWM Generator 2-Level (x1), Pulse Generator (x1), Voltage Reader (x3), and Scope (x3)
 
 ## Acknowledgement
 Based on the tutorial video by [Solar-Powered Home in Simulink](https://www.youtube.com/watch?v=RQcMuLC8_DE). Big thanks for the clear walkthrough. I used it as a foundation, then added custom improvements.
