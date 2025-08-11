@@ -85,7 +85,9 @@ A resistor represents the AC load that consumes the delivered power.
 
 ## Results
 **Output Waveforms:** 1st Waveform (after solar array) - 120V DC. 
+
                       2nd Waveform(after boost converter) - 240V DC. 
+                      
                       3rd Waveform (after inverter and passive filter) - 240V AC. 
 ## Acknowledgement
 Based on the tutorial video by [Solar-Powered Home in Simulink](https://www.youtube.com/watch?v=RQcMuLC8_DE). Big thanks for the clear walkthrough. I used it as a foundation, then added custom improvements.
