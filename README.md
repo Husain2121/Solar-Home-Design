@@ -102,6 +102,4 @@ If you have any questions about this project, suggestions for improvements, or w
 
 Email: husainlaliwala@gmail.com
 
-GitHub: github.com/Husain2121
-
 LinkedIn: https://www.linkedin.com/in/husain-laliwala-a2b0a4202/
