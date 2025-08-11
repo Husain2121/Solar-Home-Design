@@ -1,10 +1,10 @@
 #  Solar-Powered Home Simulation in MATLAB Simulink
 
-This repository contains my personalized MATLAB Simulink model of a solar-powered residential system, developed after following the tutorial “Solar-Powered Home in Simulink” on YouTube.
+This repository contains my personalized MATLAB Simulink model of a solar-powered residential system, developed learning how a solar powered works on a fundamental level.
 
 ##  What was built  
 - A working Simulink model replicating a solar-powered home system with generation, load, and energy conversion and boost components.
-- Custom enhancements to the tutorial model, including improved load profiles and explanation of system process.
+- Detailed annotations of component use and how they work together to transfer the power to the load.
 
 ## How it works
 <details> <summary>1. Solar Panels (PV Array)</summary>
@@ -93,10 +93,15 @@ A resistor represents the AC load that consumes the delivered power.
 
 3. **After Inverter & Passive Filter:** `240V AC`
 
-## Acknowledgement
-Based on the tutorial video by [Solar-Powered Home in Simulink](https://www.youtube.com/watch?v=RQcMuLC8_DE). Big thanks for the clear walkthrough. I used it as a foundation, then added custom improvements.
+## What I Learned
+- The process of making a working diagram that illustrates a larger system can be broken down into smaller sub-systems. This way, a diagram which at first seems daunting, becomes easy to understand once each individual component is understood correctly.
+- Troubleshooting is part and parcel of making models. Not everything works on the first try, and it's important to trace back your steps to pinpoint what step is causing the issue.
+- Although simple, the model illustrates that a smaller scale power system model takes time to understand and fully comprehend what and why engineering this process is very technical.
+## 📬 Contact
+If you have any questions about this project, suggestions for improvements, or would like to collaborate on similar renewable energy projects, feel free to reach out:
 
-## Improvements
-While the base model follows the tutorial, I made small changes to enhance clarity and usability:
-- Added descriptive comments and signal labels
-- Organized blocks into subsystems for better readability
+Email: husainlaliwala@gmail.com
+
+GitHub: github.com/Husain2121
+
+LinkedIn: https://www.linkedin.com/in/husain-laliwala-a2b0a4202/
