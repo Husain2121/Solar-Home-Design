@@ -96,7 +96,7 @@ A resistor represents the AC load that consumes the delivered power.
 ## What I Learned
 - The process of making a working diagram that illustrates a larger system can be broken down into smaller sub-systems. This way, a diagram which at first seems daunting, becomes easy to understand once each individual component is understood correctly.
 - Troubleshooting is part and parcel of making models. Not everything works on the first try, and it's important to trace back your steps to pinpoint what step is causing the issue.
-- Although simple, the model illustrates that a smaller scale power system model takes time to understand and fully comprehend what and why engineering this process is very technical.
+- Although simple, the model illustrates that a smaller scale power system model takes time to understand and engineering this process in the real-world is very technical and requires lots of planning.
 ## 📬 Contact
 If you have any questions about this project, suggestions for improvements, or would like to collaborate on similar renewable energy projects, feel free to reach out:
 
