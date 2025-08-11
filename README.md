@@ -85,7 +85,7 @@ A resistor represents the AC load that consumes the delivered power.
 
 ## **Results**
 
-**Output Waveforms:**
+**Output Voltages:**
 
 1. **After Solar Array:** `120V DC`  
 
