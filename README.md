@@ -7,7 +7,7 @@ This repository contains my personalized MATLAB Simulink model of a solar-powere
 - Detailed annotations of component use and how they work together to transfer the power to the load.
 
 ## How it works
-<details> <summary>1. Solar Panels (PV Array)</summary>
+<details> <summary>1. Solar Panels (PV Panel)</summary>
 Converts sunlight into DC electricity via the photovoltaic effect.
 
 Temperature affects the semiconductor band gap, which changes the energy needed to release electrons.
@@ -39,7 +39,7 @@ Represents the AC power consumption of the home.
 </details>
 
 ## Why it works
-<details> <summary>1. Solar Panels (PV Array)</summary>
+<details> <summary>1. Solar Panels (PV Panel)</summary>
 Solar panels require irradiance (sunlight) to function. They use sunlight as an energy source, allowing photons to transfer energy to electrons, generating current via the photovoltaic effect.
 
 Temperature effect: Temperature influences the band gap energy of semiconductor materials, which determines how much energy is needed to release electrons.
